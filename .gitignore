@@ -1,0 +1,17 @@
+*.swp
+*.user
+*.sdf
+*.suo
+*.vcxproj
+*.filters
+*.user
+*.log
+*.manifest
+*.lastbuildstate
+*.tlog
+*.obj
+*.pdb
+*.ipch
+*.ilk
+*.pdb
+
