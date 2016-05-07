@@ -202,7 +202,7 @@ void paintWidget::mouseDoubleClickEvent(QMouseEvent *event)
            tempPoint1.setX(tempPoint2.x());
            tempPoint2.setX(tempPoint.x());
        }
-       strLine = QString::number(tempPoint1.x()/wheelCounter) + " " + QString::number(tempPoint1.y()/wheelCounter) + " " + QString::number((tempPoint2.x() - tempPoint1.x())/wheelCounter) + " " + QString::number((tempPoint2.y() - tempPoint1.y()/wheelCounter));
+       strLine = QString::number(tempPoint1.x()/wheelCounter) + " " + QString::number(tempPoint1.y()/wheelCounter) + " " + QString::number((tempPoint2.x() - tempPoint1.x())/wheelCounter) + " " + QString::number((tempPoint2.y() - tempPoint1.y())/wheelCounter);
        fileContentList[imageNumber-1] = strLine;
        fileContent = fileContentList.join(separator);
        if(!fileOut.open(QIODevice::WriteOnly|QIODevice::Text))
