@@ -133,18 +133,12 @@ void paintWidget::mouseMoveEvent(QMouseEvent *event)
       {
           endPoint=event->pos();  //获得鼠标指针当前坐标作为终止坐标
 
-            //如果不进行特殊图形绘制，则直接在image上绘制
+
 
               isDrawing = false;
               image = imageAlpha;
               paint(image);  //绘制图形
               update();
-
-          /*else  //如果绘制特殊图形，则再临时绘图区tempImage上绘制
-          {
-              tempImage=image;  //每次绘制tempImage前用上一次image中的图片对其进行填充
-              paint(tempImage);
-          }*/
       }
 }
 void paintWidget::mouseDoubleClickEvent(QMouseEvent *event)
